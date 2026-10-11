@@ -1,61 +1,47 @@
 <div align="center">
 
-# AnimeZe
+# Kumo
 
-**An Android app for streaming anime and reading manga.**
+**Aplikasi Android untuk nonton anime subtitle Indonesia.**
 
-[![Release](https://img.shields.io/github/v/release/DeadZone-0/AnimeZe?color=orange&label=Release&style=for-the-badge)](https://github.com/DeadZone-0/AnimeZe/releases/latest)
+[![Release](https://img.shields.io/github/v/release/adiytharpansa/AnimeGO?color=orange&label=Release&style=for-the-badge)](https://github.com/adiytharpansa/AnimeGO/releases/latest)
 [![Platform](https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge)](https://developer.android.com)
-[![Developer](https://img.shields.io/badge/Developer-DeadZone--0-blue?style=for-the-badge)](https://github.com/DeadZone-0)
 
 </div>
 
 ---
 
-## Overview
+## Unduh APK
 
-AnimeZe brings anime streaming and manga reading together in one clean, custom-built interface. It comes with built-in tracking, watch/read history, and offline downloads, so you can pick up right where you left off.
+[**Download Kumo (kumo.apk)**](https://github.com/adiytharpansa/AnimeGO/releases/latest/download/kumo.apk)
 
-## Features
+Cara install: unduh `kumo.apk`, buka berkasnya, lalu izinkan "install dari sumber tidak dikenal" bila diminta. Syarat: Android 8.0 (API 26) atau lebih baru.
 
-| Feature | Description |
+## Fitur
+
+| Fitur | Keterangan |
 |---|---|
-| **Anime and Manga** | Switch seamlessly between anime streaming and manga reading in a single app. |
-| **Weekly Airing Schedule** | Live countdowns and timelines for upcoming episodes. |
-| **Offline Downloads** | downloader for watching and reading without an internet connection. |
+| **Katalog anime asli** | Data langsung dari AniList (poster, rating, sinopsis, trailer). |
+| **7 server putar** | Videasy, VidLux, VidFast, VidFlix, ScreenScape, VidRock, 111Movies — Server 1 terbuka otomatis, ganti server kapan saja. |
+| **Panel magnet Torrentio** | Sumber magnet (NyaaSi dll, urut seed terbanyak) untuk putar gratis lewat Stremio. |
+| **Tampilan gaya AniBay** | Tema gelap pekat + aksen oranye, hero Spotlight, Rankings Top 10. |
+| **Fullscreen otomatis** | Video diputar landscape layar penuh seperti pemutar video biasa. |
+| **Daftarku & riwayat** | Simpan anime, lanjutkan menonton, tersimpan di perangkat. |
 
-## Screenshots
+## Build
 
-<div align="center">
+APK dibangun otomatis oleh GitHub Actions setiap ada push ke `main`
+(workflow **Build APK Kumo**): Gradle 8.12 + JDK 17 menjalankan
+`gradle assembleRelease`, hasilnya diunggah sebagai artifact **kumo-apk**
+dan diterbitkan ke Release **v1.0.0** sebagai `kumo.apk`.
 
-| | | |
-|---|---|---|
-| ![Home](Screenshots/IMG_20260718_140212.jpg) | ![Anime Player](Screenshots/IMG_20260718_140236.jpg) | ![Manga Reader](Screenshots/IMG_20260718_140252.jpg) |
-| ![Home 2](Screenshots/IMG_20260718_140307.jpg) | ![Anime Player 2](Screenshots/IMG_20260718_140318.jpg) | ![Manga Reader 2](Screenshots/IMG_20260718_140335.jpg) |
-| ![Home 3](Screenshots/IMG_20260718_140348.jpg) | ![Anime Player 3](Screenshots/IMG_20260718_140635.jpg) | |
-
-</div>
-
-## Download
-
-Get the latest build of AnimeZe from the link below.
-
-<div align="center">
-
-[**Download Latest APK**](https://github.com/DeadZone-0/AnimeZe/releases/latest/download/app-release.apk)
-
-*Currently experimental — expect occasional bugs and rough edges.*
-
-</div>
-
-## Bug Reports
-
-Found something broken? Open an issue on the [Issues](https://github.com/DeadZone-0/AnimeZe/issues) page. Reports of bugs and unexpected behavior are always welcome and directly help improve the app.
+Aplikasi ini adalah pembungkus WebView native (Kotlin, tanpa dependensi
+tambahan) untuk Kumo 2.0 di `app/src/main/assets/www/index.html`.
 
 ---
 
 <div align="center">
 
-Made by [DeadZone-0](https://github.com/DeadZone-0)
+Kumo — dibuat oleh Adiyth
 
 </div>
